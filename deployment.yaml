@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: gatway-service
+  namespace: defalut
 spec:
   selector:
     app: gatway
@@ -14,6 +15,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gatway
+  namespace: defalut
   labels:
     app: gatway
 spec:
